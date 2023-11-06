@@ -1,20 +1,26 @@
+    /* COLOR OF LOGO  #9ac5bb */
 body {
-    background-color: #008080;
+
+    /*background-color: #008080;*/
+    background-image:url("JavOS.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-color: #9ac5bb;
+    background-position:center;
     font-family: Arial, sans-serif;
+    width: 500px;
+    height: 400px;
     margin: 0;
     padding: 0;
-  }
-  
-  .window {
-    background-color: #C0C0C0;
+    /*
     border: 2px solid #000000;
     border-radius: 5px;
-    width: 400px;
-    height: 300px;
+
     margin: 50px auto;
-    padding: 20px;
+    padding: 20px; */
   }
   
+/*
   .title-bar {
     background-color: #000000;
     color: #FFFFFF;
@@ -24,7 +30,7 @@ body {
   
   .content {
     padding: 10px;
-  }
+  } 
   
   .button {
     background-color: #000000;
@@ -36,4 +42,13 @@ body {
   
   .button:hover {
     background-color: #808080;
+  } 
+  */
+
+  .task-bar {
+    position:absolute;
+    width: 100%;
+    background-color: #C0C0C0;
+    bottom: 0;
+    border-top: 3px solid #000000;
   }
