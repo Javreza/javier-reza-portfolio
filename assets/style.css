@@ -22,15 +22,10 @@ body {
     background-repeat: no-repeat;
     background-color: #9ac5bb;
     background-position:center;
-    font-family: Arial, sans-serif;
-    width: 500px;
+    width: 350px;
     height: 400px;
     margin: 0;
     padding: 0;
-}
-
-h2 {
-    padding-left: 15px;
 }
 
 button {
@@ -43,6 +38,10 @@ button {
     background-color: #C0C0C0;
 }
 
+.padding-to-x-button{
+    padding-right: 235px;
+    padding-left: 15px;
+}
 .task-bar {
     position:absolute;
     width: 100%;
@@ -53,15 +52,24 @@ button {
 
 .file-explorer-head {
     background-color: #C0C0C0;
+    width:fit-content;
     margin-left: 15px;
     border-left: 3px solid black;
     border-top: 3px solid black;
     margin-top: 3px;
     border-right: 3px solid black;
-    border-bottom: 2px double black;
+    border-bottom: 5px double black;
+    display: inline-flex;
 }
 
 .close-button {
-    display: inline-block;
+    /*display: inline-block;*/
+    justify-content: end;
+    font-size: 25px;
+    background-color: rgb(168, 10, 10);
+    padding-left: 10px;
+    margin-right: 15px;
+    padding-right: 10px;
+    justify-content: center;
 }
 
