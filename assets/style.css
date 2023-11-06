@@ -1,85 +1,94 @@
     /* COLOR OF LOGO  #9ac5bb */
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+    /* COLOR OF LOGO  #9ac5bb */
+    @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
 
-button:hover{
-    background-color: #484444;
-    color:yellow;
-}
+    button:hover{
+        background-color: #484444;
+        color:yellow;
+    }
+    
+    button:active{
+        color: #9ac5bb;
+        background-color:darkblue;
+    }
+    
+    *{
+        font-family: 'Pixelify Sans', sans-serif;
+    }
+    body {
+    
+        /*background-color: #008080;*/
+        background-image:url("JavOS.png");
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-color: #9ac5bb;
+        background-position:center;
+        width: 350px;
+        height: 400px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    button {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 5px;
+        font-size: 25px;
+        padding: 3px;
+        border: 2px solid black;
+        background-color: #C0C0C0;
+    }
+    
+    .padding-to-x-button{
+        padding-right: 235px;
+        padding-left: 15px;
+    }
+    .task-bar {
+        position:absolute;
+        width: 100%;
+        background-color: #C0C0C0;
+        bottom: 0;
+        border-top: 2px solid #000000;
+    }
+    
+    .file-explorer-head {
+        background-color: #C0C0C0;
+        width:fit-content;
+        margin-left: 15px;
+        border-left: 3px solid black;
+        border-top: 3px solid black;
+        margin-top: 3px;
+        border-right: 3px solid black;
+        border-bottom: 5px double black;
+        display: inline-flex;
+        position: relative;
+    }
+    
+    .file-explorer-body {
+        background-color: #ffffff;
+        width: 418px;
+        height: 400px;
+        margin-left: 15px;
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-bottom: 5px solid black;
+        display: inline-flex;
+    }
+    
+    .close-button {
+        /*display: inline-block;*/
+        justify-content: end;
+        font-size: 25px;
+        background-color: rgb(168, 10, 10);
+        padding-left: 10px;
+        margin-right: 15px;
+        padding-right: 10px;
+        justify-content: center;
+    }
 
-button:active{
-    color: #9ac5bb;
-    background-color:darkblue;
-}
-
-*{
-    font-family: 'Pixelify Sans', sans-serif;
-}
-body {
-
-    /*background-color: #008080;*/
-    background-image:url("JavOS.png");
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-color: #9ac5bb;
-    background-position:center;
-    width: 350px;
-    height: 400px;
-    margin: 0;
-    padding: 0;
-}
-
-button {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 5px;
-    font-size: 25px;
-    padding: 3px;
-    border: 2px solid black;
-    background-color: #C0C0C0;
-}
-
-.padding-to-x-button{
-    padding-right: 235px;
-    padding-left: 15px;
-}
-.task-bar {
-    position:absolute;
-    width: 100%;
-    background-color: #C0C0C0;
-    bottom: 0;
-    border-top: 2px solid #000000;
-}
-
-.file-explorer-head {
-    background-color: #C0C0C0;
-    width:fit-content;
-    margin-left: 15px;
-    border-left: 3px solid black;
-    border-top: 3px solid black;
-    margin-top: 3px;
-    border-right: 3px solid black;
-    border-bottom: 5px double black;
-    display: inline-flex;
-}
-
-.file-explorer-body {
-    background-color: #ffffff;
-    width: 418px;
-    height: 400px;
-    margin-left: 15px;
-    border-left: 3px solid black;
-    border-right: 3px solid black;
-    border-bottom: 5px solid black;
-    display: inline-flex;
-}
-
-.close-button {
-    /*display: inline-block;*/
-    justify-content: end;
-    font-size: 25px;
-    background-color: rgb(168, 10, 10);
-    padding-left: 10px;
-    margin-right: 15px;
-    padding-right: 10px;
-    justify-content: center;
-}
+    .unseen {
+        position:absolute;
+        top:0px;
+        right:0px;
+        justify-content: center;
+    }
