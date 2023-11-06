@@ -1,4 +1,19 @@
     /* COLOR OF LOGO  #9ac5bb */
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+button:hover{
+    background-color: #484444;
+    color:yellow;
+}
+
+button:active{
+    color: #9ac5bb;
+    background-color:darkblue;
+}
+
+*{
+    font-family: 'Pixelify Sans', sans-serif;
+}
 body {
 
     /*background-color: #008080;*/
@@ -12,51 +27,41 @@ body {
     height: 400px;
     margin: 0;
     padding: 0;
-    /*
-    border: 2px solid #000000;
-    border-radius: 5px;
+}
 
-    margin: 50px auto;
-    padding: 20px; */
-  }
-  
-/*
-  .title-bar {
-    background-color: #000000;
-    color: #FFFFFF;
-    padding: 5px;
-    margin-bottom: 10px;
-  }
-  
-  .content {
-    padding: 10px;
-  } 
-  
-  .button {
-    background-color: #000000;
-    color: #FFFFFF;
-    padding: 5px 10px;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  
-  .button:hover {
-    background-color: #808080;
-  } 
-  */
+h2 {
+    padding-left: 15px;
+}
 
-  .task-bar {
-    position:absolute;
-    width: 100%;
-    background-color: #C0C0C0;
-    bottom: 0;
-    border-top: 3px solid #000000;
-  }
 button {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 5px;
+    font-size: 25px;
     padding: 3px;
-    border: 3px solid black;
+    border: 2px solid black;
     background-color: #C0C0C0;
 }
+
+.task-bar {
+    position:absolute;
+    width: 100%;
+    background-color: #C0C0C0;
+    bottom: 0;
+    border-top: 2px solid #000000;
+}
+
+.file-explorer-head {
+    background-color: #C0C0C0;
+    margin-left: 15px;
+    border-left: 3px solid black;
+    border-top: 3px solid black;
+    margin-top: 3px;
+    border-right: 3px solid black;
+    border-bottom: 2px double black;
+}
+
+.close-button {
+    display: inline-block;
+}
+
