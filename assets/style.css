@@ -23,7 +23,7 @@
         background-repeat: no-repeat;
         background-color: #9ac5bb;
         background-position:center;
-        width: 350px;
+        width: 500px;
         height: 400px;
         margin: 0;
         padding: 0;
@@ -60,6 +60,7 @@
         margin-top: 3px;
         border-right: 3px solid black;
         border-bottom: 5px double black;
+        width: 418px;
         display: inline-flex;
         position: relative;
     }
@@ -83,12 +84,34 @@
         padding-left: 10px;
         margin-right: 15px;
         padding-right: 10px;
-        justify-content: center;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    .glue {
+        position: relative;
+        top: -122%;
+        left: 110%;
+
     }
 
     .unseen {
-        position:absolute;
-        top:0px;
+        position: absolute;
+        top: 0px;
         right:0px;
-        justify-content: center;
+    }
+
+    .unseen .close-button{
+        margin-left: 45px;
+    }
+
+    .profile-pic{
+        display: flex;
+        background-color: #9ac5bb;
+        border: 3px solid black;
+        height: 50%;
+        width: 50%;
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
