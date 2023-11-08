@@ -17,10 +17,15 @@
 }
 
 body {
-
-    background: var(--background-color) url("assets/JavOS.png") center / auto 100% no-repeat;
+    background-image:url("JavOS.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-color: #9ac5bb;
+    background-position:center;
     width: 350px;
     height: 400px;
+    margin: 0;
+    padding: 0;
 }
 
 button {
@@ -46,6 +51,7 @@ button:active {
     border: 3px solid var(--window-border-color);
     border-bottom: 5px double var(--window-border-color);
     display: flex;
+    width: 418px;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
@@ -53,7 +59,7 @@ button:active {
 
 .window-body {
     background-color: #ffffff;
-    width: 418px;
+    width: 438px;
     height: 400px;
     margin-left: 15px;
     border: 3px solid var(--window-border-color);
@@ -66,7 +72,6 @@ button:active {
     bottom: 0;
     background-color: var(--button-bg-color);
     border-top: 2px solid var(--taskbar-border-color);
-    text-align: center;
 }
 
 .close-button {
@@ -75,7 +80,39 @@ button:active {
     padding: 0 10px;
 }
 
-/* Responsive Design */
+.task-bar button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+}
+
+.task-windows {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+}
+
+.projects {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(33.33% - 20px);
+    justify-content: left;
+    visibility: hidden;
+}
+
+.about {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(33.33% - 20px);
+    justify-content: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    visibility: hidden;
+}
+
 @media (max-width: 768px) {
     body {
         width: 100%;
