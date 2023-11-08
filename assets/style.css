@@ -122,6 +122,31 @@ button:active {
     border: 2px solid var(--taskbar-border-color);
 }
 
+.projects > .window-body{
+    display:flex;
+    flex-direction: column;
+
+}
+
+.project-item {
+    /*display: flexbox;*/
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    background-image:url("IMG_1406.PNG");
+    background-size: 100% 100%;
+    margin-bottom: 2px;
+    margin-left: 20px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+.project-item > p {
+    
+}
+
+
 /*.portfolio-button:active + .portfolio-button + .projects {
     visibility: visible;
 }*/
