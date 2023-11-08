@@ -100,7 +100,7 @@ button:active {
     flex-shrink: 0;
     flex-basis: calc(33.33% - 20px);
     justify-content: left;
-    visibility: hidden;
+    visibility: visible;
 }
 
 .about {
@@ -110,8 +110,21 @@ button:active {
     justify-content: right;
     margin-left: 20px;
     margin-bottom: 10px;
-    visibility: hidden;
+    visibility: visible;
 }
+
+.profile-pic{
+    width: 150px;
+    height: 150px;
+    background-color: var(--background-color);
+    justify-self: left;
+    margin: 15px;
+    border: 2px solid var(--taskbar-border-color);
+}
+
+/*.portfolio-button:active + .portfolio-button + .projects {
+    visibility: visible;
+}*/
 
 @media (max-width: 768px) {
     body {
