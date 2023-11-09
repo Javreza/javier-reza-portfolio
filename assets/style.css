@@ -45,6 +45,12 @@ button:active {
     color: var(--button-active-color);
     background-color: var(--button-active-bg-color);
 }
+
+a {
+    text-decoration: none;
+    display: flex;
+}
+
 .window-header {
     background-color: var(--button-bg-color);
     margin: 3px 15px 0;
@@ -141,15 +147,9 @@ button:active {
     flex-wrap: nowrap;
     justify-content: flex-end;
 }
-
-.project-item > p {
-    
-}
-
-
-/*.portfolio-button:active + .portfolio-button + .projects {
-    visibility: visible;
-}*/
+ a {
+    transform: scale(1);
+ }
 
 @media (max-width: 768px) {
     body {
