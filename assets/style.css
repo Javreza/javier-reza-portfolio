@@ -14,6 +14,14 @@
     --taskbar-border-color: #000;
     --window-border-color: #000;
     --close-button-color: rgb(168, 10, 10);
+}    
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: var(--window-border-color);
 }
 
 body {
@@ -21,7 +29,7 @@ body {
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-color: #9ac5bb;
-    background-position:center;
+    background-position:center;	
     width: 350px;
     height: 400px;
     margin: 0;
@@ -112,7 +120,7 @@ button:active {
     flex-shrink: 0;
     flex-basis: calc(33.33% - 20px);
     justify-content: left;
-    visibility: visible;
+    display: none;
 }
 
 .about {
@@ -122,7 +130,7 @@ button:active {
     justify-content: right;
     margin-left: 20px;
     margin-bottom: 10px;
-    visibility: visible;
+    display: none;
 }
 
 .profile-pic{
@@ -165,6 +173,18 @@ button:active {
 
 .mock-clock{
     right: 0px;
+}
+
+.about .window-body {
+    height: 390px;
+}
+
+.projects-button:active + .projects {
+    display: block;
+  }
+
+.about-button:active + .about{
+    display: block;
 }
 
 @media (max-width: 768px) {
