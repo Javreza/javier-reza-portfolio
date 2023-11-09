@@ -1,30 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="assets/style.css"/> 
-  <title>Windows 95 Style</title>
+    <meta charset="UTF-8">
+    <title>Windows 95 Style Interface</title>
+    <link rel="stylesheet" href="assets/style.css"/>
 </head>
 <body>
-<section>
-    <div class="file-explorer-head">
-        <span class="padding-to-x-button"><h2>Projects</h2></span>
-        <button class="close-button">X</button>
-    </div>
-    <div class="file-explorer-body">
-
-    </div>
-</section>
-<section class="unseen">
-    <div class="file-explorer-head">
-        <span class="padding-to-x-button"><h2>About</h2></span>
-        <button class="close-button">X</button>
-    </div>
-    <div class="file-explorer-body">
-
-    </div>
-</section>
-    <div class="task-bar">
-        <button>ABOUT</button>
-    </div>
+    <section class="task-windows" >
+        <section class="projects">
+        <div class="window-header">
+            <h2>Projects</h2>
+            <button class="close-button">X</button>
+        </div>
+        <div class="window-body">
+            <div class="project-item" id="refactor">
+                <a href="https://github.com/Javreza/horiseon-webpage">refactor</a>
+            </div>
+            <div class="project-item" id="analytics">
+                <a href=" http://google.com">analytics</a>
+            </div>
+            <div class="project-item" id="game">
+                <a href=" http://google.com">game</a>
+            </div>
+            <div class="project-item" id="calculator">
+                <a href=" http://google.com">calculator</a>
+            </div>
+            <div class="project-item" id="shop">
+                <a href=" http://google.com">shop</a>
+            </div>
+            <div class="project-item" id="seo">
+                <a href=" http://google.com">seo</a>
+            </div>
+        </div>
+        </section>
+        <section class="about">
+        <div class="window-header">
+            <h2>About</h2>
+            <button class="close-button">X</button>
+        </div>
+        <div class="window-body">
+            <img class="profile-pic" src="./assets/out.PNG"/>
+            <p>Hey there! I'm Javi. I'm somewhat of a puzzle-solver and somewhat of a creative.
+             I currently work retail and hope to find a job that will give me a creative outlet, career growth, and most importantly, a raise.
+            <br> On this page you will find various projects that I undertook while on my learning journey into web development.</p>
+        <div class="contact-me">
+            <h3>Contact Me: </h3>
+        <!-- <section> -->
+            <button><a href="http://www.linkedin.com/in/javirez">Linkedin</a></button>
+            <button><a href="https://github.com/Javreza">github</a></button>
+        <!-- </section> -->
+        </div>
+        </div>
+        </section>
+    </section>
+    <form class="task-bar">
+        <button class="portfolio-button">PROJECTS</button>
+        <button class="about-button">ABOUT</button>
+    </form>
 </body>
 </html>
+
