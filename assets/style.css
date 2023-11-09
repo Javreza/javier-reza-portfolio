@@ -46,11 +46,6 @@ button:active {
     background-color: var(--button-active-bg-color);
 }
 
-a {
-    text-decoration: none;
-    display: flex;
-}
-
 .window-header {
     background-color: var(--button-bg-color);
     margin: 3px 15px 0;
@@ -73,11 +68,22 @@ a {
 }
 
 .task-bar {
-    position: fixed;
+    position: absolute;
     width: 100%;
     bottom: 0;
     background-color: var(--button-bg-color);
     border-top: 2px solid var(--taskbar-border-color);
+}
+
+.contact-me{
+    background-color: var(--button-bg-color);
+    display: inline-flex;
+    bottom: 0;
+    width: 100%;
+}
+
+.contact-me button{
+    margin: 10px;
 }
 
 .close-button {
@@ -123,8 +129,10 @@ a {
     width: 150px;
     height: 150px;
     background-color: var(--background-color);
-    justify-self: left;
-    margin: 15px;
+    justify-self: center;
+    margin-top: 5px;
+    margin-left: 130px;
+    margin-bottom: 0px;
     border: 2px solid var(--taskbar-border-color);
 }
 
@@ -147,9 +155,17 @@ a {
     flex-wrap: nowrap;
     justify-content: flex-end;
 }
- a {
-    transform: scale(1);
- }
+
+.window-body p {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.mock-clock{
+    right: 0px;
+}
 
 @media (max-width: 768px) {
     body {
